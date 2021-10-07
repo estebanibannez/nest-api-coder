@@ -30,7 +30,6 @@ export class ProductService {
         return result;
     }
 
-
     async updateProduct(id:string, producto: CreateProductDTO): Promise<IProduct>{
         const result = await this.productModel.findByIdAndUpdate(id,
             { $set: producto },

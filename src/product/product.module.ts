@@ -1,8 +1,10 @@
 import { Module } from '@nestjs/common';
-import { ProductController } from './product.controller';
-import { ProductService } from './product.service';
 import { MongooseModule} from '@nestjs/mongoose';
 import { ProductSchema } from 'src/product/schemas/product.schema';
+import { ProductController } from './product.controller';
+import { ProductService } from './product.service';
+
+
 
 @Module({
   imports:[
